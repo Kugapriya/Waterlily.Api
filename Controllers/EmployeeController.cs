@@ -4,7 +4,8 @@ using Waterlily.Api.Entities;
 using Waterlily.Api.IService;
 
 namespace Waterlily.Api.Controllers;
-
+  [Route("api/[controller]")]
+  [ApiController]
 public class EmployeeController:BaseApiController
 {
   public readonly IEmployeeService _employeeService;

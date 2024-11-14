@@ -19,8 +19,8 @@ public static class ApplicationServiceExtension
             opt.UseSqlServer(config.GetConnectionString("DefaultConnection"));
         });
       services.AddCors();
-    //   services.AddScoped<IEmployeeRepository, EmployeeRepository>();
-    //   services.AddScoped<IEmployeeService,EmployeeService>();
+    services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+    services.AddScoped<IEmployeeService,EmployeeService>();
     
        return services;
     }
