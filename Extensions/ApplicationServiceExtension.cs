@@ -22,6 +22,8 @@ public static class ApplicationServiceExtension
     services.AddScoped<IEmployeeRepository, EmployeeRepository>();
     services.AddScoped<IEmployeeService,EmployeeService>();
     
+    services.AddScoped<IPublicHolidayRepository, PublicHolidayRepository>();
+    services.AddScoped<IPublicHolidayService,PublicHolidayService>();
        return services;
     }
 
