@@ -1,0 +1,291 @@
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    background: linear-gradient(180deg, #343a40, #495057);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#sidebar ul {
+    padding: 0;
+}
+
+#sidebar li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+#sidebar a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f8f9fa;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#sidebar a i {
+    margin-right: 10px;
+} 
+
+#sidebar a:hover {
+    background: #6c757d;
+    color: #ffffff;
+}
+
+#sidebar a.active {
+    background: #0d6efd;
+    color: #ffffff;
+}
+
+
+#content-wrapper {
+    margin-left: 260px;
+    margin-top: 56px;
+}
+
+
+.navbar {
+    background: linear-gradient(180deg, #343a40, #495057);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.navbar-brand img {
+    height: 40px; 
+    margin-right: 10px; 
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+
+#content-wrapper h1 {
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#content-wrapper p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+    padding-bottom: 50px;
+}
+#col-md-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#employeeForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    width: 80%;
+}
+
+#table1 {
+    margin-top: 20px;
+    width: 70%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+#table1 th, #table1 td {
+    text-align: center;
+    padding: 8px 12px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+#table1 th {
+    background-color: #f8f9fa; 
+    color: #555;
+    font-weight: bold;
+}
+
+#table1 tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+#table1 tr:hover {
+    background-color: #e9ecef; 
+}
+
+#table1 th, #table2 td {
+    width: auto; 
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+#content-wrapper h1 {
+    text-align: center;
+    color: #4b3535;
+}
+
+#content-wrapper h2 {
+    text-align: left;
+    color: #555;
+}
+
+
+#workingDaysForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    width: 80%;
+}
+
+#workingDaysForm .col-auto {
+    flex: 1 1 200px; 
+    max-width: 350px;
+}
+
+#workingDaysForm .form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#workingDaysForm input {
+    font-size: 1rem;
+    width: 100%;
+}
+
+#workingDaysForm button{
+    width: 50%;
+}
+
+#holidayForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 80%;
+}
+
+#holidayForm .col-auto {
+    flex: 1 1 200px; 
+    max-width: 350px; 
+}
+
+#holidayForm .form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#holidayForm button{
+    width: 50%;
+}
+
+
+#table2 {
+    margin-top: 20px;
+    width: 80%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+#table2 th, #table2 td {
+    text-align: center;
+    padding: 8px 12px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+#table2 th {
+    background-color: #f8f9fa; 
+    color: #555;
+    font-weight: bold;
+}
+
+#table2 tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+#table2 tr:hover {
+    background-color: #e9ecef; 
+}
+
+#table2 th, #table2 td {
+    width: auto; 
+}
+
+
+#result {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgb(52, 21, 67);
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    #sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #content-wrapper {
+        margin-left: 0;
+    }
+  
+    #workingDaysForm, #holidayForm {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+    #workingDaysForm .col-auto, #holidayForm .col-auto {
+        width: 100%;
+    }
+
+    
+    #workingDaysForm .col-auto input, #holidayForm .col-auto input {
+        max-width: 100%;
+    }
+
+  
+    #workingDaysForm button, #holidayForm button {
+        width: 100%;
+    }
+    #table2 th, #table2 td {
+        font-size: 0.8rem; 
+        padding: 6px 8px;
+    }
+}
